@@ -2,17 +2,17 @@ public class Depo {
 
     //Kitapla ilgili bilgiler
     int kitapNo;
-    String kitapAdi;
     String yazarAdi;
+    String kitapAdi;
     int kitapFiyat;
 
     public Depo() {
     }
 
-    public Depo(int kitapNo, String kitapAdi, String yazarAdi, int kitapFiyat) {
+    public Depo(int kitapNo, String yazarAdi, String kitapAdi, int kitapFiyat) {
         this.kitapNo = kitapNo;
-        this.kitapAdi = kitapAdi;
         this.yazarAdi = yazarAdi;
+        this.kitapAdi = kitapAdi;
         this.kitapFiyat = kitapFiyat;
     }
 
@@ -24,20 +24,20 @@ public class Depo {
         this.kitapNo = kitapNo;
     }
 
-    public String getKitapAdi() {
-        return kitapAdi;
-    }
-
-    public void setKitapAdi(String kitapAdi) {
-        this.kitapAdi = kitapAdi;
-    }
-
     public String getYazarAdi() {
         return yazarAdi;
     }
 
     public void setYazarAdi(String yazarAdi) {
         this.yazarAdi = yazarAdi;
+    }
+
+    public String getKitapAdi() {
+        return kitapAdi;
+    }
+
+    public void setKitapAdi(String kitapAdi) {
+        this.kitapAdi = kitapAdi;
     }
 
     public int getKitapFiyat() {
@@ -50,11 +50,10 @@ public class Depo {
 
     @Override
     public String toString() {
-        return "Depo{" +
+        return
                 "kitapNo=" + kitapNo +
-                ", kitapAdi='" + kitapAdi + '\'' +
                 ", yazarAdi='" + yazarAdi + '\'' +
-                ", kitapFiyat=" + kitapFiyat +
-                '}';
+                ", kitapAdi='" + kitapAdi + '\'' +
+                ", kitapFiyat=" + kitapFiyat;
     }
 }
